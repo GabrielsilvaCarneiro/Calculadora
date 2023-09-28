@@ -1,0 +1,82 @@
+html{
+    box-sizing: border-box;
+    height:100%;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Add more styles here if needed */
+body {
+    align-items: center;
+    background: linear-gradient(320deg, #606060,#96f8b2,#80ff00); /* Cor de fundo da página, opcional */
+    display: flex;
+    font-family: 'dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.calculator {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background:rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius:16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    color: #000000;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background:rgba(255, 255, 255, 0.34) ;
+
+}
+
+
+.teclado {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.numero, .operacao {
+    width: 100%;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#visor{
+
+    font-size: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    display: flex;
+    border-radius: 5px;
+    height:60px;
+    margin-top:20px;
+    
+}
+
+.operacao{
+
+    background-color: #11ff00;
+    color: white;
+    border-radius: 10px;
+}
